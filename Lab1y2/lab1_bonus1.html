@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Js</title>
+</head>
+<body>
+    <h3>EJERCICIOS JAVASCRIPT ✨</h3>
+
+    <script>
+      console.log("Ejercicio 1")
+      var numero1 = prompt("Favor ingresar su primer numero")
+      var numero2 = prompt("Favor ingresar su segundo numero")
+      var operacion = prompt("Favor ingresar la operacion a realizar" + "\n" + "0: suma,  1: resta,  2: multiplicacion")
+      var resultado = 0
+      numero1 = Number(numero1)
+      numero2 = Number(numero2)
+      operacion = parseInt(operacion)
+      switch (operacion){
+          case 0:
+              resultado = numero1 + numero2
+              break
+          case 1:
+              resultado = numero1 - numero2
+              break
+          case 2:
+              resultado = numero1 * numero2
+               break
+      }
+      alert("Resultado " + resultado)
+    </script>
+
+</body>
+</html>
